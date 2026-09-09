@@ -4,31 +4,46 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Lab1;
-
-class Program
+namespace Lab1
 {
-    static void Main(String[] args)
+    struct GeneticData
     {
-        string sequenceFile = "sequence.0.txt";
-        string commandFile = "command.0.txt";
-        string outputFile = "genedata.0.txt";
+        public string protein;
+        public string organism;
+        public string amino_acids;
+    }
 
-        if (args.Length == 3)
+    struct Command
+    {
+        public string name;
+        public string parameter1;
+        public string parameter2;
+    }
+    
+    class Program
+    {
+        static void Main(String[] args)
         {
-            sequenceFile = args[0];
-            commandFile = args[1];
-            outputFile = args[2];
-        }
+            string sequenceFile = "sequence.0.txt";
+            string commandFile = "command.0.txt";
+            string outputFile = "genedata.0.txt";
 
-        List<GeneticData> data = ReadData(sequenceFile);
-        List<Command> commands = ReadCommands(commandFile);
+            if (args.Length == 3)
+            {
+                sequenceFile = args[0];
+                commandFile = args[1];
+                outputFile = args[2];
+            }
 
-        using (StreamWriter writer = new StreamWriter(outputFile))
-        {
-            CommandHandler(data, commands, writer);
+            List<GeneticData> data = ReadData(sequenceFile);
+            List<Command> commands = ReadCommands(commandFile);
+
+            using (StreamWriter writer = new StreamWriter(outputFile))
+            {
+                CommandHandler(data, commands, writer);
+            }
+
+            Console.WriteLine("Ready! The result is written to a file " + outputFile);
         }
-        
-        Console.WriteLine("Ready! The result is written to a file " + outputFile);
     }
 }
