@@ -22,6 +22,9 @@ namespace Lab1
             public string parameter2;
         }
 
+        private const string SEPARATOR = 
+            "--------------------------------------------------------------------------";
+
         static List<GeneticData> ReadData(string filename)
         {
             List<GeneticData> data = new List<GeneticData>();
@@ -70,6 +73,49 @@ namespace Lab1
             return commands;
         }
 
+        static void CommandHandler(List<GeneticData> data, List<Command> commands, StreamWriter writer)
+        {
+            writer.WriteLine("NOVIK_VLADISLAV");
+            writer.WriteLine("Genetic Search");
+            writer.WriteLine(SEPARATOR);
+
+            int operationNumber = 1;
+
+            foreach (Command command in commands)
+            {
+                string header;
+
+                if (command.name == "diff")
+                {
+                    header = string.Format("{0:D3}   {1}   {2}   {3}", 
+                        operationNumber, command.name, command.parameter1, command.parameter2);
+                }
+                else if (command.name == "search")
+                {
+                    header = string.Format("{0:D3}   {1}   {2}", 
+                        operationNumber, command.name, RLDecoding(command.parameter1));
+                }
+                else
+                {
+                    header = string.Format("{0:D3}   {1}   {2}",
+                        operationNumber, command.name, command.parameter1);
+                }
+                
+                writer.WriteLine(header);
+
+                if (command.name == "search")
+                    DoSearch(data, command.parameter1, writer);
+                else if (command.name == "diff")
+                    DoDiff(data, command.parameter1, command.parameter2, writer);
+                else if (command.name == "mode")
+                    DoMode(data, command.parameter1, writer);
+                
+                writer.WriteLine(SEPARATOR);
+
+                operationNumber++;
+            }
+        }
+        
         static void Main(String[] args)
         {
             string sequenceFile = "sequence.0.txt";
