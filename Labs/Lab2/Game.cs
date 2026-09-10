@@ -1,11 +1,7 @@
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.IO;
-using System.IO.Pipes;
 using System.Text;
 
-namespace Game
+namespace Lab2
 {
     public enum GameState
     {
@@ -46,7 +42,7 @@ namespace Game
 
             size = int.Parse(allLines[0].Trim(), CultureInfo.InvariantCulture);
             cat.boardSize = size;
-            mouse.boarddSize = size;
+            mouse.boardSize = size;
 
             commands = new string[allLines.Length - 1];
             Array.Copy(allLines, 1, commands, 0, allLines.Length - 1);
@@ -99,29 +95,29 @@ namespace Game
                     break;
             }
 
-            if (cat.state == State.Playing && mouse.satet == State.Playing &&
+            if (cat.state == State.Playing && mouse.state == State.Playing &&
                 cat.location == mouse.location)
             {
                 cat.state = State.Winner;
                 mouse.state = State.Looser;
                 mouseCaught = true;
-                caughtAtLocation = mouse.Location;
+                caughtAtLocation = mouse.location;
             }
         }
 
         private void DoPrintCommand()
         {
-            string catField = cat.state == GameState.NotInGame
+            string catField = cat.state == State.NotInGame
                 ? "??".PadLeft(3)
                 : cat.location.ToString(CultureInfo.InvariantCulture).PadLeft(6);
             
-            string mouseField = mouse.state == GameState.NotInGame
+            string mouseField = mouse.state == State.NotInGame
                 ? "??".PadLeft(3)
                 : cat.location.ToString(CultureInfo.InvariantCulture).PadLeft(6);
 
             string line = catField + mouseField;
 
-            if (cat.state != GameState.NotInGame && mouse.state != GameState.NotInGame)
+            if (cat.state != State.NotInGame && mouse.state != State.NotInGame)
             {
                 int distance = GetDistance();
                 line += distance.ToString(CultureInfo.InvariantCulture).PadLeft(10);
@@ -155,8 +151,8 @@ namespace Game
             sb.Append("\n");
             sb.Append("Distance traveled:   Mouse    Cat\n");
 
-            sb.Append(mouse.distanceTraveled.ToString(CultureInfo.InvariantCulture).PadLeft(26));
-            sb.Append(cat.distanceTraveled.ToString(CultureInfo.InvariantCulture).PadLeft(7));
+            sb.Append(mouse.distanceTravelled.ToString(CultureInfo.InvariantCulture).PadLeft(26));
+            sb.Append(cat.distanceTravelled.ToString(CultureInfo.InvariantCulture).PadLeft(7));
             sb.Append("\n");
             sb.Append("\n");
 
