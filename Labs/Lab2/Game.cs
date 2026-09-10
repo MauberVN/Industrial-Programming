@@ -109,11 +109,11 @@ namespace Lab2
         {
             string catField = cat.state == State.NotInGame
                 ? "??".PadLeft(3)
-                : cat.location.ToString(CultureInfo.InvariantCulture).PadLeft(6);
+                : cat.location.ToString(CultureInfo.InvariantCulture).PadLeft(3);
             
             string mouseField = mouse.state == State.NotInGame
-                ? "??".PadLeft(3)
-                : cat.location.ToString(CultureInfo.InvariantCulture).PadLeft(6);
+                ? "??".PadLeft(6)
+                : mouse.location.ToString(CultureInfo.InvariantCulture).PadLeft(6);
 
             string line = catField + mouseField;
 

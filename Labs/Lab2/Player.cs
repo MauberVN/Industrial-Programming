@@ -28,7 +28,7 @@ namespace Lab2
             if (state == State.NotInGame)
             {
                 location = steps;
-                state = State.Winner;
+                state = State.Playing;
             }
             else
             {
