@@ -1,0 +1,15 @@
+E:\Industrial-Programming\Labs\Lab1\bin\Debug\net10.0\Lab1.exe
+E:\Industrial-Programming\Labs\Lab1\bin\Debug\net10.0\Lab1.deps.json
+E:\Industrial-Programming\Labs\Lab1\bin\Debug\net10.0\Lab1.runtimeconfig.json
+E:\Industrial-Programming\Labs\Lab1\bin\Debug\net10.0\Lab1.dll
+E:\Industrial-Programming\Labs\Lab1\bin\Debug\net10.0\Lab1.pdb
+E:\Industrial-Programming\Labs\Lab1\obj\Debug\net10.0\Lab1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Industrial-Programming\Labs\Lab1\obj\Debug\net10.0\Lab1.AssemblyInfoInputs.cache
+E:\Industrial-Programming\Labs\Lab1\obj\Debug\net10.0\Lab1.AssemblyInfo.cs
+E:\Industrial-Programming\Labs\Lab1\obj\Debug\net10.0\Lab1.csproj.CoreCompileInputs.cache
+E:\Industrial-Programming\Labs\Lab1\obj\Debug\net10.0\Lab1.sourcelink.json
+E:\Industrial-Programming\Labs\Lab1\obj\Debug\net10.0\Lab1.dll
+E:\Industrial-Programming\Labs\Lab1\obj\Debug\net10.0\refint\Lab1.dll
+E:\Industrial-Programming\Labs\Lab1\obj\Debug\net10.0\Lab1.pdb
+E:\Industrial-Programming\Labs\Lab1\obj\Debug\net10.0\Lab1.genruntimeconfig.cache
+E:\Industrial-Programming\Labs\Lab1\obj\Debug\net10.0\ref\Lab1.dll

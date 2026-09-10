@@ -10,22 +10,22 @@ namespace Lab1
     {
         struct GeneticData
         {
-            public string protein;
-            public string organism;
-            public string amino_acids;
+            public string Protein;
+            public string Organism;
+            public string AminoAcids;
         }
 
         struct Command
         {
-            public string name;
-            public string parameter1;
-            public string parameter2;
+            public string Name;
+            public string Parameter1;
+            public string Parameter2;
         }
 
-        const string STUDENT_NAME = "Novik Vladisslav";
-        const int ORGANISM_COLUMN_WIDTH = 25;
-        const int AMINO_ACID_COLUMN_WIDTH = 11;
-        const string SEPARATOR = 
+        private const string STUDENT_NAME = "Novik Vladislav";
+        private const int ORGANISM_COLUMN_WIDTH = 25;
+        private const int AMINO_ACID_COLUMN_WIDTH = 11;
+        private const string SEPARATOR = 
             "--------------------------------------------------------------------------";
 
         static List<GeneticData> ReadData(string filename)
@@ -42,9 +42,9 @@ namespace Lab1
                     string[] parts = line.Split('\t');
 
                     GeneticData gd;
-                    gd.protein = parts[0];
-                    gd.organism = parts[1];
-                    gd.amino_acids = parts[2];
+                    gd.Protein = parts[0];
+                    gd.Organism = parts[1];
+                    gd.AminoAcids = parts[2];
                     
                     data.Add(gd);
                 }
@@ -66,9 +66,9 @@ namespace Lab1
                     string[] parts = line.Split('\t');
 
                     Command command;
-                    command.name = parts[0];
-                    command.parameter1 = parts.Length > 1 ? parts[1] : String.Empty;
-                    command.parameter2 = parts.Length > 2 ? parts[2] : String.Empty;
+                    command.Name = parts[0];
+                    command.Parameter1 = parts.Length > 1 ? parts[1] : String.Empty;
+                    command.Parameter2 = parts.Length > 2 ? parts[2] : String.Empty;
                     
                     commands.Add(command);
                 }
@@ -76,7 +76,7 @@ namespace Lab1
             return commands;
         }
 
-        static string RLDecoding(string aminoAcids)
+        private static string RLDecoding(string aminoAcids)
         {
             StringBuilder decoded = new StringBuilder();
 
@@ -111,9 +111,9 @@ namespace Lab1
             bool found = false;
             foreach (GeneticData gd in data)
             {
-                if (gd.amino_acids.Contains(decodedSequence))
+                if (gd.AminoAcids.Contains(decodedSequence))
                 {
-                    writer.WriteLine(gd.organism.PadRight(ORGANISM_COLUMN_WIDTH) + gd.protein);
+                    writer.WriteLine(gd.Organism.PadRight(ORGANISM_COLUMN_WIDTH) + gd.Protein);
                     found = true;
                 }
             }
@@ -143,8 +143,8 @@ namespace Lab1
                 return;
             }
 
-            string a = protein1.Value.amino_acids;
-            string b = protein2.Value.amino_acids;
+            string a = protein1.Value.AminoAcids;
+            string b = protein2.Value.AminoAcids;
             
             int minLenght = Math.Min(a.Length, b.Length);
             int difference = 0;
@@ -164,22 +164,20 @@ namespace Lab1
 
             GeneticData? protein = FindProtein(data, proteinName);
 
-            if (proteinName == null)
+            if (protein == null)
             {
                 writer.WriteLine("MISSING:");
                 writer.WriteLine(proteinName);
                 return;
             }
             
-            string aminoAcids = protein.Value.amino_acids;
+            string aminoAcids = protein.Value.AminoAcids;
 
             Dictionary<char, int> counts = new Dictionary<char, int>();
             foreach (char ch in aminoAcids)
             {
-                if (counts.ContainsKey(ch))
+                if (!counts.TryAdd(ch, 1))
                     counts[ch]++;
-                else
-                    counts[ch] = 1;
             }
 
             char bestLetter = ' ';
@@ -200,7 +198,7 @@ namespace Lab1
         static GeneticData? FindProtein(List<GeneticData> data, string proteinName)
         {
             foreach (GeneticData gd in data)
-                if (gd.protein == proteinName)
+                if (gd.Protein == proteinName)
                     return gd;
 
             return null;
@@ -209,7 +207,7 @@ namespace Lab1
         static void CommandHandler(List<GeneticData> data, List<Command> commands, StreamWriter writer)
         {
             writer.WriteLine(STUDENT_NAME);
-            writer.WriteLine("Genetic Search");
+            writer.WriteLine("Genetic Searching");
             writer.WriteLine(SEPARATOR);
 
             int operationNumber = 1;
@@ -218,30 +216,30 @@ namespace Lab1
             {
                 string header;
 
-                if (command.name == "diff")
+                if (command.Name == "diff")
                 {
                     header = string.Format("{0:D3}   {1}   {2}   {3}", 
-                        operationNumber, command.name, command.parameter1, command.parameter2);
+                        operationNumber, command.Name, command.Parameter1, command.Parameter2);
                 }
-                else if (command.name == "search")
+                else if (command.Name == "search")
                 {
                     header = string.Format("{0:D3}   {1}   {2}", 
-                        operationNumber, command.name, RLDecoding(command.parameter1));
+                        operationNumber, command.Name, RLDecoding(command.Parameter1));
                 }
                 else
                 {
                     header = string.Format("{0:D3}   {1}   {2}",
-                        operationNumber, command.name, command.parameter1);
+                        operationNumber, command.Name, command.Parameter1);
                 }
                 
                 writer.WriteLine(header);
 
-                if (command.name == "search")
-                    DoSearch(data, command.parameter1, writer);
-                else if (command.name == "diff")
-                    DoDiff(data, command.parameter1, command.parameter2, writer);
-                else if (command.name == "mode")
-                    DoMode(data, command.parameter1, writer);
+                if (command.Name == "search")
+                    DoSearch(data, command.Parameter1, writer);
+                else if (command.Name == "diff")
+                    DoDiff(data, command.Parameter1, command.Parameter2, writer);
+                else if (command.Name == "mode")
+                    DoMode(data, command.Parameter1, writer);
                 
                 writer.WriteLine(SEPARATOR);
 
@@ -251,8 +249,8 @@ namespace Lab1
         
         static void Main(String[] args)
         {
-            string sequenceFile = "sequence.0.txt";
-            string commandFile = "command.0.txt";
+            string sequenceFile = "sequences.0.txt";
+            string commandFile = "commands.0.txt";
             string outputFile = "genedata.0.txt";
 
             if (args.Length == 3)
