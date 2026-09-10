@@ -73,6 +73,32 @@ namespace Lab1
             return commands;
         }
 
+        static string RLDecoding(string amino_acids)
+        {
+            StringBuilder decoded = new StringBuilder();
+
+            int i = 0;
+            while (i < amino_acids.Length)
+            {
+                char ch = amino_acids[i];
+
+                if (char.IsDigit(ch))
+                {
+                    int count = ch - '0';
+                    char letter = amino_acids[i + 1];
+                    decoded.Append(letter, count);
+                    i += 2;
+                }
+                else
+                {
+                    decoded.Append(ch);
+                    i += 1;
+                }
+            }
+
+            return decoded.ToString();
+        }
+
         static void CommandHandler(List<GeneticData> data, List<Command> commands, StreamWriter writer)
         {
             writer.WriteLine("NOVIK_VLADISLAV");
