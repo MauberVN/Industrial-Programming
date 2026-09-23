@@ -1,35 +1,27 @@
 Novik Vladislav
 Genetic Searching
 --------------------------------------------------------------------------
-001   search   SIIK
-organism                 protein
-Homo sapiens (Human)     6.8 kDa mitochondrial proteolipid
---------------------------------------------------------------------------
-002   search   PLML
-organism                 protein
-Homo sapiens (Human)     Pre-T/NK cell associated protein 6H9A
---------------------------------------------------------------------------
-003   search   FKIII
-organism                 protein
-NOT FOUND
---------------------------------------------------------------------------
-004   diff   6.8 kDa mitochondrial proteolipid   Alcohol dehydrogenase
-amino-acids difference:
-81
---------------------------------------------------------------------------
-005   diff   RNA-dependent RNA polymerase [Fragment]   Alcohol dehydrogenase
-amino-acids difference:
-115
---------------------------------------------------------------------------
-006   diff   Cecropin   Pre-T/NK cell associated protein 6H9A
-amino-acids difference:
-56
---------------------------------------------------------------------------
-007   mode   Cecropin
+001   mode   PREDICTED: similar to double homeobox
 amino-acid occurs:
-A          5
+R          17
 --------------------------------------------------------------------------
-008   mode   Alcohol dehydrogenase
+002   search   LKSQ
+organism                 protein
+Homo sapiens (Human)     TRAF interacting protein TANK isoform b
+--------------------------------------------------------------------------
+003   diff   C-FLIP AMPA glutamate   6.8 kDa mitochondrial proteolipid
+amino-acids difference:
+58
+--------------------------------------------------------------------------
+004   mode   Lsm3 protein
 amino-acid occurs:
-V          11
+E          11
+--------------------------------------------------------------------------
+005   diff   Lsm3 protein   Drosophila melanogaster [Fragment]
+amino-acids difference:
+116
+--------------------------------------------------------------------------
+006   search   TPRFGKTFDA
+organism                 protein
+Homo sapiens (Human)     pituitary tumor-transforming protein 1
 --------------------------------------------------------------------------

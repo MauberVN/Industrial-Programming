@@ -6,8 +6,8 @@ namespace Lab2
     {
         static void Main(string[] args)
         {
-            Game.InputFile = "1.ChaseData.txt";
-            Game.OutFile = "1.PursuitLog.txt";
+            Game.InputFile = "2.ChaseData.txt";
+            Game.OutFile = "2.PursuitLog.txt";
 
             if (args.Length == 2)
             {

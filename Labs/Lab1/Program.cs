@@ -249,8 +249,8 @@ namespace Lab1
         
         static void Main(String[] args)
         {
-            string sequenceFile = "sequences.0.txt";
-            string commandFile = "commands.0.txt";
+            string sequenceFile = "sequences.1.txt";
+            string commandFile = "commands.1.txt";
             string outputFile = "genedata.0.txt";
 
             if (args.Length == 3)
