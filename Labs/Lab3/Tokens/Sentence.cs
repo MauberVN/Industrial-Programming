@@ -29,7 +29,7 @@ namespace Lab3.Tokens
         public int WordCount => Words.Count();
             
         [XmlIgnore]
-        public int Length => ToString()!.Length;
+        public int Length => ToString().Length;
 
         public bool IsQuestion()
         {
