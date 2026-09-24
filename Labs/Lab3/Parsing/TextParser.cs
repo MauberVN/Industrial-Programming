@@ -4,9 +4,11 @@ using Lab3.Tokens;
 
 namespace Lab3.Parsing
 {
-    public partial class TextParser
+    public class TextParser
     {
-        private static readonly Regex TokenRegex = MyRegex();
+        private static readonly Regex TokenRegex = new Regex(
+            @"(?<word>[\p{L}\p{Nd}]+(?:['’\-][\p{L}\p{Nd}]+)*)|(?<punct>[^\s\p{L}\p{Nd}])",
+            RegexOptions.Compiled);
 
         private static readonly HashSet<string> SentenceTerminators = [".", "!", "?", "…"];
 
@@ -46,8 +48,5 @@ namespace Lab3.Parsing
             text.Sentences.Add(new Sentence(tokens));
             tokens.Clear();
         }
-
-        [GeneratedRegex(@"(?<word>[\p{L}\p{Nd}]+(?:['’\-][\p{L}\p{Nd}]+)*)|(?<punct>[^\s\p{L}\p{Nd}])", RegexOptions.Compiled)]
-        private static partial Regex MyRegex();
     }
 }
