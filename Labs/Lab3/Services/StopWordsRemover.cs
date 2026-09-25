@@ -6,8 +6,8 @@ namespace Lab3.Services
     public class StopWordsRemover
     {
         private readonly HashSet<string> _stopWords;
-        
-        public StopWordsRemover(IEnumerable<string> stopWords)
+
+        private StopWordsRemover(IEnumerable<string> stopWords)
         {
             _stopWords =
             [

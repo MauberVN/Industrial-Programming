@@ -1,3 +1,4 @@
+using System.Reflection.Metadata;
 using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
@@ -13,10 +14,11 @@ namespace Lab3.Services
             var settings = new XmlWriterSettings()
             {
                 Indent = true,
-                Encoding = new UTF8Encoding()
+                Encoding = new UTF8Encoding(false)
             };
             
             using var writer = XmlWriter.Create(filePath, settings);
+            writer.WriteStartDocument(standalone: true);
             
             var namespaces = new XmlSerializerNamespaces();
             namespaces.Add(string.Empty, string.Empty);

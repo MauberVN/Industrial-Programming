@@ -1,0 +1,15 @@
+E:\Industrial-Programming\Labs\Lab3\bin\Debug\net10.0\Lab3.exe
+E:\Industrial-Programming\Labs\Lab3\bin\Debug\net10.0\Lab3.deps.json
+E:\Industrial-Programming\Labs\Lab3\bin\Debug\net10.0\Lab3.runtimeconfig.json
+E:\Industrial-Programming\Labs\Lab3\bin\Debug\net10.0\Lab3.dll
+E:\Industrial-Programming\Labs\Lab3\bin\Debug\net10.0\Lab3.pdb
+E:\Industrial-Programming\Labs\Lab3\obj\Debug\net10.0\Lab3.GeneratedMSBuildEditorConfig.editorconfig
+E:\Industrial-Programming\Labs\Lab3\obj\Debug\net10.0\Lab3.AssemblyInfoInputs.cache
+E:\Industrial-Programming\Labs\Lab3\obj\Debug\net10.0\Lab3.AssemblyInfo.cs
+E:\Industrial-Programming\Labs\Lab3\obj\Debug\net10.0\Lab3.csproj.CoreCompileInputs.cache
+E:\Industrial-Programming\Labs\Lab3\obj\Debug\net10.0\Lab3.sourcelink.json
+E:\Industrial-Programming\Labs\Lab3\obj\Debug\net10.0\Lab3.dll
+E:\Industrial-Programming\Labs\Lab3\obj\Debug\net10.0\refint\Lab3.dll
+E:\Industrial-Programming\Labs\Lab3\obj\Debug\net10.0\Lab3.pdb
+E:\Industrial-Programming\Labs\Lab3\obj\Debug\net10.0\Lab3.genruntimeconfig.cache
+E:\Industrial-Programming\Labs\Lab3\obj\Debug\net10.0\ref\Lab3.dll
