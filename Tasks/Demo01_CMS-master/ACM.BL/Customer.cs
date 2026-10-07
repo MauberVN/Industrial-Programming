@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ACM.BL
+﻿namespace ACM.BL
 {
     public class Customer
     {
@@ -32,6 +26,8 @@ namespace ACM.BL
         }
         public string FirstName { get; set; }
         public string EmailAddress { get; set; }
+        public Address HomeAddress { get; set; }
+        public Address WorkAddress { get; set; }
         public int CustomerId { get; private set; }
         public string FullName
         {
