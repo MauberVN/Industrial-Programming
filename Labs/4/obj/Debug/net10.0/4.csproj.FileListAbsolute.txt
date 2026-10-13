@@ -1,0 +1,16 @@
+E:\University\Industrial-Programming\Labs\4\bin\Debug\net10.0\4.exe
+E:\University\Industrial-Programming\Labs\4\bin\Debug\net10.0\4.deps.json
+E:\University\Industrial-Programming\Labs\4\bin\Debug\net10.0\4.runtimeconfig.json
+E:\University\Industrial-Programming\Labs\4\bin\Debug\net10.0\4.dll
+E:\University\Industrial-Programming\Labs\4\bin\Debug\net10.0\4.pdb
+E:\University\Industrial-Programming\Labs\4\obj\Debug\net10.0\4.GeneratedMSBuildEditorConfig.editorconfig
+E:\University\Industrial-Programming\Labs\4\obj\Debug\net10.0\4.AssemblyInfoInputs.cache
+E:\University\Industrial-Programming\Labs\4\obj\Debug\net10.0\4.AssemblyInfo.cs
+E:\University\Industrial-Programming\Labs\4\obj\Debug\net10.0\4.csproj.CoreCompileInputs.cache
+E:\University\Industrial-Programming\Labs\4\obj\Debug\net10.0\4.sourcelink.json
+E:\University\Industrial-Programming\Labs\4\obj\Debug\net10.0\4.dll
+E:\University\Industrial-Programming\Labs\4\obj\Debug\net10.0\refint\4.dll
+E:\University\Industrial-Programming\Labs\4\obj\Debug\net10.0\4.pdb
+E:\University\Industrial-Programming\Labs\4\obj\Debug\net10.0\4.genruntimeconfig.cache
+E:\University\Industrial-Programming\Labs\4\obj\Debug\net10.0\ref\4.dll
+E:\University\Industrial-Programming\Labs\4\bin\Debug\net10.0\Data\sample.txt
