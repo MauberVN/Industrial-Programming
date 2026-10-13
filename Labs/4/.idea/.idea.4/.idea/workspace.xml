@@ -13,7 +13,17 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b8fe60-3c52-4210-b9ff-ff01e88867c2" name="Changes" comment="" />
+    <list default="true" id="53b8fe60-3c52-4210-b9ff-ff01e88867c2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Concordance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Concordance.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ConcordanceEntry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ConcordanceEntry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tokens/Punctuation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tokens/Punctuation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tokens/Sentence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tokens/Sentence.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tokens/Token.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tokens/Token.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tokens/Word.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tokens/Word.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/4.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/4.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/4.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/4.AssemblyInfoInputs.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +33,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Services.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Services/Concordance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Services/ConcordanceEntry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TextModel/Text.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tokens/Punctuation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tokens/Sentence.cs" root0="FORCE_HIGHLIGHTING" />
