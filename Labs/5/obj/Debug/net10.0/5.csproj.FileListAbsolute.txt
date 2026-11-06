@@ -13,4 +13,3 @@ E:\University\Industrial-Programming\Labs\5\obj\Debug\net10.0\refint\5.dll
 E:\University\Industrial-Programming\Labs\5\obj\Debug\net10.0\5.pdb
 E:\University\Industrial-Programming\Labs\5\obj\Debug\net10.0\5.genruntimeconfig.cache
 E:\University\Industrial-Programming\Labs\5\obj\Debug\net10.0\ref\5.dll
-E:\University\Industrial-Programming\Labs\5\bin\Debug\net10.0\Data\sweets.json

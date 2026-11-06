@@ -25,7 +25,7 @@ public class Gift : IWeighable, IEnumerable<Sweet>
 
     public void AddRange(IEnumerable<Sweet> sweets)
     {
-        foreach (Sweet sweet in sweets)
+        foreach (var sweet in sweets)
             Add(sweet);
     }
 

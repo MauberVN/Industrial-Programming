@@ -16,13 +16,9 @@ public class SweetsRepository
         Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
     };
 
-    private readonly string _filePath;
-
-    public SweetsRepository(string filePath) => _filePath = filePath;
-
-    public IEnumerable<Sweet> Load()
+    public static IEnumerable<Sweet> Load(string filePath)
     {
-        var json = File.ReadAllText(_filePath);
+        var json = File.ReadAllText(filePath);
         var dtos = JsonSerializer.Deserialize<List<SweetDto>>(json, Options)
                    ?? throw new InvalidDataException("Файл данных пуст или повреждён.");
 
@@ -33,7 +29,7 @@ public class SweetsRepository
         }
     }
 
-    public void Save(IEnumerable<Sweet> sweets, string filePath)
+    public static void Save(IEnumerable<Sweet> sweets, string filePath)
     {
         var dtos = sweets.Select(SweetDtoMapper.ToDto).ToList();
         var json = JsonSerializer.Serialize(dtos, Options);

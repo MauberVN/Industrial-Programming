@@ -1,0 +1,215 @@
+[
+  {
+    "type": "JellyCandy",
+    "name": "Мармеладные мишки",
+    "weightGrams": 5,
+    "sugarGrams": 3,
+    "caloriesPer100G": 330,
+    "fruitBase": "яблоко"
+  },
+  {
+    "type": "JellyCandy",
+    "name": "Мармеладные мишки",
+    "weightGrams": 5,
+    "sugarGrams": 3,
+    "caloriesPer100G": 330,
+    "fruitBase": "яблоко"
+  },
+  {
+    "type": "JellyCandy",
+    "name": "Мармеладные мишки",
+    "weightGrams": 5,
+    "sugarGrams": 3,
+    "caloriesPer100G": 330,
+    "fruitBase": "яблоко"
+  },
+  {
+    "type": "JellyCandy",
+    "name": "Мармеладные мишки",
+    "weightGrams": 5,
+    "sugarGrams": 3,
+    "caloriesPer100G": 330,
+    "fruitBase": "яблоко"
+  },
+  {
+    "type": "JellyCandy",
+    "name": "Мармеладные мишки",
+    "weightGrams": 5,
+    "sugarGrams": 3,
+    "caloriesPer100G": 330,
+    "fruitBase": "яблоко"
+  },
+  {
+    "type": "Caramel",
+    "name": "Барбарис",
+    "weightGrams": 6,
+    "sugarGrams": 5.1,
+    "caloriesPer100G": 380,
+    "hasFilling": false
+  },
+  {
+    "type": "Caramel",
+    "name": "Барбарис",
+    "weightGrams": 6,
+    "sugarGrams": 5.1,
+    "caloriesPer100G": 380,
+    "hasFilling": false
+  },
+  {
+    "type": "Caramel",
+    "name": "Барбарис",
+    "weightGrams": 6,
+    "sugarGrams": 5.1,
+    "caloriesPer100G": 380,
+    "hasFilling": false
+  },
+  {
+    "type": "Caramel",
+    "name": "Барбарис",
+    "weightGrams": 6,
+    "sugarGrams": 5.1,
+    "caloriesPer100G": 380,
+    "hasFilling": false
+  },
+  {
+    "type": "Caramel",
+    "name": "Взлётная",
+    "weightGrams": 7,
+    "sugarGrams": 5.46,
+    "caloriesPer100G": 400,
+    "hasFilling": true
+  },
+  {
+    "type": "Caramel",
+    "name": "Взлётная",
+    "weightGrams": 7,
+    "sugarGrams": 5.46,
+    "caloriesPer100G": 400,
+    "hasFilling": true
+  },
+  {
+    "type": "Caramel",
+    "name": "Взлётная",
+    "weightGrams": 7,
+    "sugarGrams": 5.46,
+    "caloriesPer100G": 400,
+    "hasFilling": true
+  },
+  {
+    "type": "ChocolateCandy",
+    "name": "Ромашка",
+    "weightGrams": 12,
+    "sugarGrams": 6.24,
+    "caloriesPer100G": 540,
+    "cocoaPercent": 30,
+    "filling": "нуга"
+  },
+  {
+    "type": "ChocolateCandy",
+    "name": "Ромашка",
+    "weightGrams": 12,
+    "sugarGrams": 6.24,
+    "caloriesPer100G": 540,
+    "cocoaPercent": 30,
+    "filling": "нуга"
+  },
+  {
+    "type": "Cookie",
+    "name": "Юбилейное",
+    "weightGrams": 13,
+    "sugarGrams": 2.86,
+    "caloriesPer100G": 450,
+    "hasNuts": false
+  },
+  {
+    "type": "Cookie",
+    "name": "Юбилейное",
+    "weightGrams": 13,
+    "sugarGrams": 2.86,
+    "caloriesPer100G": 450,
+    "hasNuts": false
+  },
+  {
+    "type": "Cookie",
+    "name": "Юбилейное",
+    "weightGrams": 13,
+    "sugarGrams": 2.86,
+    "caloriesPer100G": 450,
+    "hasNuts": false
+  },
+  {
+    "type": "Cookie",
+    "name": "Юбилейное",
+    "weightGrams": 13,
+    "sugarGrams": 2.86,
+    "caloriesPer100G": 450,
+    "hasNuts": false
+  },
+  {
+    "type": "ChocolateCandy",
+    "name": "Мишка косолапый",
+    "weightGrams": 15,
+    "sugarGrams": 6.75,
+    "caloriesPer100G": 520,
+    "cocoaPercent": 35,
+    "filling": "пралине"
+  },
+  {
+    "type": "ChocolateCandy",
+    "name": "Мишка косолапый",
+    "weightGrams": 15,
+    "sugarGrams": 6.75,
+    "caloriesPer100G": 520,
+    "cocoaPercent": 35,
+    "filling": "пралине"
+  },
+  {
+    "type": "ChocolateCandy",
+    "name": "Мишка косолапый",
+    "weightGrams": 15,
+    "sugarGrams": 6.75,
+    "caloriesPer100G": 520,
+    "cocoaPercent": 35,
+    "filling": "пралине"
+  },
+  {
+    "type": "Lollipop",
+    "name": "Петушок",
+    "weightGrams": 20,
+    "sugarGrams": 19.6,
+    "caloriesPer100G": 390,
+    "flavor": "вишня"
+  },
+  {
+    "type": "Lollipop",
+    "name": "Петушок",
+    "weightGrams": 20,
+    "sugarGrams": 19.6,
+    "caloriesPer100G": 390,
+    "flavor": "вишня"
+  },
+  {
+    "type": "Marshmallow",
+    "name": "Зефир ванильный",
+    "weightGrams": 30,
+    "sugarGrams": 19.5,
+    "caloriesPer100G": 300,
+    "color": "белый"
+  },
+  {
+    "type": "Marshmallow",
+    "name": "Зефир ванильный",
+    "weightGrams": 30,
+    "sugarGrams": 19.5,
+    "caloriesPer100G": 300,
+    "color": "белый"
+  },
+  {
+    "type": "ChocolateBar",
+    "name": "Тёмный шоколад",
+    "weightGrams": 50,
+    "sugarGrams": 14,
+    "caloriesPer100G": 560,
+    "cocoaPercent": 72
+  }
+]
