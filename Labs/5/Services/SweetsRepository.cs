@@ -23,10 +23,7 @@ public class SweetsRepository
                    ?? throw new InvalidDataException("Файл данных пуст или повреждён.");
 
         foreach (var dto in dtos)
-        {
-            for (var i = 0; i < Math.Max(1, dto.Count ?? 1); i++)
-                yield return SweetFactory.Create(dto);
-        }
+            yield return SweetFactory.Create(dto);
     }
 
     public static void Save(IEnumerable<Sweet> sweets, string filePath)

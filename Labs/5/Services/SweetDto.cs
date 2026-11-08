@@ -8,8 +8,6 @@ public class SweetDto
     public double SugarGrams { get; set; }
     public double CaloriesPer100G { get; set; }
 
-    public int? Count { get; set; }
-
     public double? CocoaPercent { get; set; }
     public string? Filling { get; set; }
     public string? Flavor { get; set; }
