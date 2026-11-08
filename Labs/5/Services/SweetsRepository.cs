@@ -5,7 +5,7 @@ using _5.Models.Sweets.Abstract;
 
 namespace _5.Services;
 
-public class SweetsRepository
+public static class SweetsRepository
 {
     private static readonly JsonSerializerOptions Options = new()
     {

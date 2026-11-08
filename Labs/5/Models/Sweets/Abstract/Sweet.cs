@@ -29,7 +29,7 @@ public abstract class Sweet : IWeighable, ISugarContaining
 
     public override string ToString()
     {
-        string details = string.IsNullOrEmpty(Details) ? string.Empty : $", {Details}";
+        var details = string.IsNullOrEmpty(Details) ? string.Empty : $", {Details}";
         return $"[{Category}] {Name}: {WeightGrams:F1} г, сахар {SugarGrams:F2} г, " +
                $"{CaloriesPer100G:F0} ккал/100г{details}";
     }
