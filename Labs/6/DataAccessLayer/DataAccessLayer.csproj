@@ -10,4 +10,8 @@
       <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Interfaces\" />
+    </ItemGroup>
+
 </Project>

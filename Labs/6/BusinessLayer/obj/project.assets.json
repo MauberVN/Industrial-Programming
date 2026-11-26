@@ -8,8 +8,7 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\vladn\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\vladn\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -20,9 +19,6 @@
       "packagesPath": "C:\\Users\\vladn\\.nuget\\packages\\",
       "outputPath": "E:\\University\\Industrial-Programming\\Labs\\6\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\vladn\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
