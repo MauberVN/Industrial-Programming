@@ -17,6 +17,9 @@
       <Compile Update="AddSweetForm.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="MainForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
