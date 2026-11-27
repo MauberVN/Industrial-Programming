@@ -56,6 +56,8 @@ public class Gift : BusinessObject, IWeighable, ISugarContaining, IEnumerable<Sw
 
     public IEnumerable<Sweet> FindBySugarRange(double min, double max)
     {
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(min);
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(max);
         ArgumentOutOfRangeException.ThrowIfGreaterThan(min, max);
         return _sweets.Where(s => s.SugarGrams >= min && s.SugarGrams <= max);
     }
