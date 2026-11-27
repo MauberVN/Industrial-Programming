@@ -13,4 +13,10 @@
       <ProjectReference Include="..\ServiceLayer\ServiceLayer.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Update="AddSweetForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
 </Project>
